@@ -1,0 +1,356 @@
+#info {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+#info .upper {
+    margin: 0 auto;
+    /*căn giữa*/
+    /*padding: 0 150px; /*xuống hàng*/
+    text-align: center;
+    width: 80%;
+
+}
+
+#info .upper h1 {
+    font-size: 250%;
+    font-weight: 900;
+    font-family: Bevan, Poppins, sans-serif;
+    color: #1b273d;
+    margin-bottom: 10px;
+}
+
+#info .upper p:nth-child(2) {
+    color: #ec398b;
+    font-family: Oswald, sans-serif;
+    margin-bottom: 10px;
+}
+
+#info .upper p:nth-child(3) {
+    color: rgba(50, 51, 51, .8);
+    font-family: Poppins, sans-serif;
+    margin-bottom: 10px;
+    line-height: 25px;
+    font-size: 105%;
+}
+
+#info .lower {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+#info .lower .five h1 {
+    height: 110px;
+    width: 110px;
+    line-height: 100px;
+    border: 8px solid #ddd;
+    text-align: right;
+    font-size: 350%;
+    border-radius: 16px;
+    color: #554bb9;
+    font-family: Oswald, sans-serif;
+}
+
+#info .lower .october {
+    padding-left: 20px;
+    line-height: 25px;
+}
+
+#info .lower .october span:nth-child(1) {
+    color: #1b273d;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#about .lower .october span:nth-child(2) {
+    color: rgba(50, 51, 51, .8);
+}
+
+#info button {
+    /* border: 1px solid black; */
+    background: #e0e721;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: none;
+
+}
+
+#info button a {
+    color: #4a25aa;
+    text-decoration: none;
+    font-size: 110%;
+    font-weight: 700;
+}
+
+#info button:hover a {
+    color: #fff;
+
+
+}
+
+#info button:hover {
+    border-radius: 40px;
+    transition: 0.5s;
+
+}
+
+#info .nut {
+    text-align: center;
+}
+
+@media screen and (max-width: 913px) {
+    #info .upper {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    #info .upper {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #info .upper {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 361px) {
+
+    #info .upper {
+        width: 100%;
+    }
+}
+
+/*/////////////////////////////////*/
+#banner {
+    background: url("../imgs/banner.gif");
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    /*để ở giữa khi có kéo nhỏ lại*/
+    padding: 300px 50px;
+}
+
+#banner .contain {
+    /* border: 2px solid red; */
+    color: #fff;
+    display: flex;
+}
+
+#banner .time {
+    /* border: 2px solid green; */
+    width: calc(100% / 4);
+    text-align: center;
+    /* overflow: hidden; */
+}
+
+#banner .time p:nth-child(1) {
+    font-size: 900%;
+    font-style: italic;
+    font-weight: 250%;
+    font-family: 'Playfair Display', serif;
+    line-height: 80%;
+}
+
+@media screen and (max-width: 660px) {
+    #banner .time p:nth-child(1) {
+        font-size: 420%;
+        font-weight: 150%;
+        line-height: 85%;
+    }
+
+    #banner .time p:nth-child(2) {
+        font-size: 80%;
+        font-weight: 100%;
+
+    }
+}
+
+@media screen and (max-width: 361px) {
+    #banner .time p:nth-child(1) {
+        font-size: 310%;
+        font-weight: 100%;
+        line-height: 85%;
+    }
+
+    #banner .time p:nth-child(2) {
+        font-size: 80%;
+        font-weight: 100%;
+
+    }
+
+}
+
+/*///////////////////////*/
+#products {
+    padding-left: 7%;
+    padding-right: 7%;
+    background: #554bb9;
+}
+
+#products .row {
+    display: flex;
+    /* border: 2px solid black; */
+    flex-wrap: wrap;
+}
+
+#products .row .stuff {
+    /* border: 1px solid red; */
+    width: calc(100% / 4);
+    text-align: center;
+    overflow: hidden;
+    transition: 1s;
+    /* padding: 75px 0; */
+    padding-top: 50px;
+    padding-bottom: 25px;
+
+
+}
+
+#products .row .row2 {
+    width: calc(100% / 3);
+
+}
+
+#products .row .stuff img {
+    width: 35%;
+    margin-bottom: 15px;
+
+}
+
+#products .row .stuff .dau {
+    /* border: 1px solid red; */
+    position: relative;
+    z-index: 1;
+
+
+}
+#products .row .stuff .dau::before{
+    content: " ";
+    position: absolute;
+    background: url("../imgs/dots2.png");
+    width: 100%;
+    height: 100%;
+    transform: translate(-65%,80%) rotate(45deg);
+    z-index: -1;
+}
+#products .row .stuff .dau2 {
+    /* border: 1px solid red; */
+    position: relative;
+    z-index: 1;
+
+
+}
+#products .row .stuff .dau2::before{
+    content: " ";
+    position: absolute;
+    background: url("../imgs/dots2.png");
+    width: 100%;
+    height: 100%;
+    transform: translate(-90%,60%) rotate(45deg);
+    z-index: -1;
+}
+
+#products .row .stuff .content p {
+    margin-bottom: 20px;
+    color: #f5f6fa;
+    font-weight: 900;
+    font-size: 150%;
+
+}
+
+#products .row .stuff .content .price {
+    margin-bottom: 20px;
+    color: #efa506;
+    font-size: 27px;
+    font-weight: 900;
+
+}
+
+#products .row .stuff .content button {
+    border: none;
+    font-size: 15px;
+    background: #ec398b;
+    padding: 16px 30px;
+    margin-bottom: 10px;
+    color: #f5f6fa;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: 0.5s;
+
+}
+#products .row .stuff .content button:hover {
+    background: #e0e721;
+    color: #4a25aa;
+    border-radius: 25px;
+    transition: 0.5s;
+
+}
+
+#products .row .stuff:hover .dau {
+    animation: moveup 0.5s linear;
+
+}
+
+#products .row .stuff:hover {
+    background-color: #f5f6fa;
+
+}
+
+#products .row .stuff:hover .content p {
+    color: #554bb9;
+}
+
+#products .row .stuff:hover .content .price {
+    color: #efa506;
+}
+
+@keyframes moveup {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    /*khi màn hình bé hơn 600px*/
+    #products .row .stuff {
+
+        width: calc(100% / 2);
+
+
+    }
+    
+}
+
+@media screen and (max-width: 560px) {
+
+    /*khi màn hình bé hơn 600px*/
+    #products .row .stuff {
+
+        width: 100%;
+
+    }
+
+    #products {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    #products .row .stuff img {
+        width: 20%;
+    }
+}

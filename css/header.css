@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    /* border: 1px solid red; */
+    /* min-height: 80px; */
+    padding: 10px 15px;
+    background: rgba(27, 39, 61, .95) !important;
+    /* position: fixed;
+    width: 100%;*/
+} 
+
+#header .boxcenter {
+    /* border: 1px solid green; */
+    /* min-height: 80px; */
+    display: flex;
+}
+
+#header .logo {
+    /* border: 1px solid blue; */
+    /* min-height: 80px; */
+    width: 50%;
+}
+
+#header .logo img {
+    /* min-height: 80px; */
+    width: 160px;
+}
+
+#header .cover {
+    /* border: 1px solid red; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#header .menu {
+    /* border: 1px solid black; */
+    margin-right: 10px;
+
+}
+
+#header ul {
+    display: flex;
+    /* border: 1px solid red; */
+
+}
+
+#header li {
+    list-style: none;
+    margin-left: 10px;
+
+}
+
+#header li:hover a {
+    color: #4a25aa;
+
+}
+
+#header .menu a {
+    color: #bdc3c7;
+    text-decoration: none;
+    font-size: 110%;
+    font-weight: 500;
+}
+
+#header button {
+    /* border: 1px solid black; */
+    background: #e0e721;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: 0.5s;
+    position: relative;
+    border: none;
+
+}
+
+#header button a {
+    color: #4a25aa;
+    text-decoration: none;
+    font-size: 110%;
+    font-weight: 700;
+}
+
+#header button:hover a {
+    color: #fff;
+
+
+}
+
+#header button:hover {
+    border-radius: 40px;
+    transition: 0.5s;
+
+}
+
+#header i {
+    font-size: 150%;
+    position: absolute;
+    background: #4a25aa;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    display: none;
+    transition: 0.5s;
+}
+
+#header i:hover {
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+@media (max-width: 767px) {
+    #header .menu a {
+        display: none;
+
+    }
+
+    #header button {
+        display: none;
+
+    }
+
+    #header i {
+        display: block;
+
+    }
+}
+
+@media (max-width: 360px) {
+    #header .logo img {
+        /* min-height: 80px; */
+        width: 120px;
+    }
+
+    #header i {
+        display: block;
+        font-size: 140%;
+        background: #4a25aa;
+        padding: 8px 18px;
+        color: white;
+        border-radius: 3px;
+    }
+}
